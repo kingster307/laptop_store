@@ -45,6 +45,14 @@ const server = http.createServer((req, res) => {
 
 
     }
+    //regex -> testing the extensions
+    else if ((/\.(jpg|jpeg|png|gif)$/i).test(pathName)) {
+        // no character encoding because its not text
+        fs.readFile(`${__dirname}/data/img${pathName}`, (err, data) => {
+            res.writeHead(200, {'Content-type': 'image/jpg'});
+            res.end(data);
+        });
+    } 
 
     //notice the use of 404
     else{
