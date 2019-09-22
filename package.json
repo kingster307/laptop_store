@@ -1,0 +1,11 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "* the goal of this project is to get in some practice time with node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
